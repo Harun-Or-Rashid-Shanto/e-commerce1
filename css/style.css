@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+   /* font-family: 'Montserrat', sans-serif;
+    
+    */
+}
+
+.navbar-light .nav-item .nav-link,
+.navbar-light .nav-item .fas{
+    font-size: 20px;
+    margin: 0px 5px;
+    color: #000;
+}
+.navbar-light .nav-item .fas{
+    margin-top: 12px;
+}
+.navbar-light .nav-item .nav-link:hover,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .fas:hover{
+    color:orange
+}
+
+/*home*/
+#home{
+    background-image: url(../img/back.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position:top 60px center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#home h1 span{
+    color: coral;
+}
+#home h1{
+    font-weight: 700;
+}
+#home button{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+#home button:hover{
+    background-color: #333;
+}
+
+#new .one img{
+    
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 278, 178, 0.7);
+}
+#new .one{
+    margin: 0;
+    padding: 0;
+}
+#new .one .details h2{
+    font-weight: 700;
+}
+#new .one .details button{
+    display: inline-block;
+    background: none;
+    font-size: 20px;
+    color: #000;
+    border: none;
+    border-bottom: 2px solid #000;
+    transform: translateY(50px);
+    transition: 0.3s;
+}
+#new .one .details button:hover{
+    border-bottom: 2px solid red;
+    color: red;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+#feature hr{
+    border: 2px solid orange;
+    width: 50px;
+    text-align: center;
+}
+#feature .product .fas{
+    color:orange
+}
+#feature .product button{
+    padding: 10px 15px;
+    background-color: orange;
+    color:#fff;
+    border: none;
+    border-radius: 5%;
+    position: relative;
+    display: none;
+    transition: 0.5s;
+    
+}
+#feature .product:hover img{
+opacity: 0.7;
+}
+#feature .product:hover button{
+    display: inline-block;
+}
+
+#parallax-background{
+    background-image: url(../img/banner/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-attachment: fixed;
+}
+#parallax-background h1{
+    font-weight: 700;
+}
+
+#clothes hr{
+    border: 2px solid orange;
+    width: 50px;
+    text-align: center;
+}
+#clothes .product .fas{
+    color:orange
+}
+#clothes .product button{
+    padding: 10px 15px;
+    background-color: orange;
+    color:#fff;
+    border: none;
+    border-radius: 5%;
+    position: relative;
+    display: none;
+    transition: 0.5s;
+    
+}
+#clothes .product:hover img{
+opacity: 0.7;
+}
+#clothes .product:hover button{
+    display: inline-block;
+}
+
+#watches hr{
+    border: 2px solid orange;
+    width: 50px;
+    text-align: center;
+}
+#watches .product .fas{
+    color:orange
+}
+#watches .product button{
+    padding: 10px 15px;
+    background-color: orange;
+    color:#fff;
+    border: none;
+    border-radius: 5%;
+    position: relative;
+    display: none;
+    transition: 0.5s;
+    
+}
+#watches .product:hover img{
+opacity: 0.7;
+}
+#watches .product:hover button{
+    display: inline-block;
+}
+
+#shoes hr{
+    border: 2px solid orange;
+    width: 50px;
+    text-align: center;
+}
+#shoes .product .fas{
+    color:orange
+}
+#shoes .product button{
+    padding: 10px 15px;
+    background-color: orange;
+    color:#fff;
+    border: none;
+    border-radius: 5%;
+    position: relative;
+    display: none;
+    transition: 0.5s;
+    
+}
+#shoes .product:hover img{
+opacity: 0.7;
+}
+#shoes .product:hover button{
+    display: inline-block;
+}
+
+
+#footer .text p{
+ font-size: 14px;
+}
+#footer ul li a{
+    color:#fff;
+    margin: 10px;
+    text-decoration: none;
+}
+#footer ul li a:hover{
+    color:red;
+}
+#footer .insta-img img{
+    height: 100px;
+    width: 100px;
+    margin: 4px 2px;
+}
+#footer .fab{
+    margin: 0 5px;
+    font-size: 35px;
+}
+#footer .fab:hover{
+    color: red;
+}
+
+
+/*----media object-----*/
+@media screen and (max-width:767px){
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        margin: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #new .one:nth-child(1) .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #new .one:nth-child(3) .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
